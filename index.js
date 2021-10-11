@@ -1,3 +1,13 @@
+const server = require("./api/server");
+const dotenv = require("dotenv").config();
+
+const PORT = process.env.PORT || 5000;
+
+server.listen(PORT, () => {
+  console.log("My server is running")
+});
+
+
 /*
 play this: https://www.youtube.com/watch?v=d-diB65scQU
 
